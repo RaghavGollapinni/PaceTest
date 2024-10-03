@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    
+    text-decoration: none;
+}
+.hover-link{
+    font-weight: bold;
+    font-size: 55px;
+    color:#000000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hover-link:hover{
+     color:#0d7ded;
+}
+
+header {
+    background-color: #035956;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    font-size: 1.15rem;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: #65ccb7;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Ensures the video doesn't overflow the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: -1; /* Sends the video behind the content */
+    opacity: 0.85 ;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #0d7ded;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0c457e;
+    
+}
+
+.why-pace{
+    box-shadow: 0 0 20px black;
+    border-radius: 18px;
+    max-width: 800px;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    height: auto;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
+}
+.wht-pace{
+    box-shadow: 0 0 20px black;
+    border-radius: 18px;
+    max-width: 800px;
+    height: auto;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
+}
+
+.PACE-Objectives{
+    box-shadow: 0 0 20px black;
+    border-radius: 18px;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    height: auto;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
+}
+
+.discoveries{
+    box-shadow: 0 0 20px black;
+    border-radius: 18px;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    height: auto;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
+}
+
+
+@keyframes text-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Slide in from the up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%); /* Set to original position */
+    }
+}
+/* Section Styling */
+section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.socialmed a{
+    text-decoration: none;
+    color: #97d7d5;
+}
+.logo-overlay {
+    position: absolute; /* Adjust the position as per your need */
+    top: 0.1px;
+    left:0.1px ;
+    width: 150px; /* Set your logo size */
+    opacity: 0.9; /* Make the logo blend slightly */
+    z-index: 1; /* Keep it on the same plane */
+    pointer-events: none; /* Allows interaction with the video below */
+    margin-left: 15px;
+    margin-top: 4px;
+  }
+

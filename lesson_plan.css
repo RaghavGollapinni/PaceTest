@@ -1,0 +1,129 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: absolute; /* Ensure it's above the video */
+    top: 20px; /* Position it at the top of the video */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.module-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the cards */
+    gap: 80px;
+    perspective: 1000px;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    z-index: 2; /* Keep the content above the video */
+}
+
+.module {
+    width: 280px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    cursor: pointer;
+    background-color: #0d7ded;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.module:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@keyframes text-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Slide in from the up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%); /* Set to original position */
+    }
+}
+
+.flip-content.front {
+    background-color: #ffffff;
+    color: #5ea1e4;
+}
+
+.flip-content.back {
+    background-color: #5ea1e4;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.module h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white; /* Same color for the titles */
+}
+
+.module-list {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+.module-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.module-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.module-list li a:hover {
+    color: #0c4f91;
+}
+
+.module-video {
+    position: fixed; /* Fixes the video to the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 140vh; /* Full height of the viewport */
+    object-fit: cover; 
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}

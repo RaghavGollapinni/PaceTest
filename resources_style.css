@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('pace-spacecraft-jpg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    filter: brightness(80%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    color: #0047ab;
+    font-size: 36px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+hr, p {
+    position: relative;
+    z-index: 1;
+}
+
+hr {
+    width: 60%;
+    margin: 10px auto;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+p {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+big {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+br {
+    margin-bottom: 10px;
+}
